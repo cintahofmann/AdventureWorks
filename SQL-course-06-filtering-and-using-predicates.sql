@@ -32,7 +32,7 @@ WHERE ProductCategoryID IN (5,6,7);
 --Find products that have a category ID of 5,6,7 and sell end date
 SELECT ProductCategoryID, Name, SellEndDate
 FROM SalesLT.Product
-WHERE ProductCategoryID IN (5,6,7) AND SellEndDate IS NULL;
+WHERE ProductCategoryID IN (5,6,7) AND SellEndDate IS NOT NULL;
 
 --Find products that have a category ID of 5,6,7 or a product
 --number that begins with FR
