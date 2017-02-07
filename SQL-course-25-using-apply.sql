@@ -15,7 +15,7 @@ CREATE FUNCTION SalesLT.udfMaxUnitPrice (@SalesOrderID int)
 RETURNS TABLE
 AS
 RETURN
-SELECT SalesOrderID,Max(UnitPrice) as MaxUnitPrice FROM
+SELECT SalesOrderID,Max(UnitPrice) AS MaxUnitPrice FROM
 SalesLT.SalesOrderDetail
 WHERE SalesOrderID=@SalesOrderID
 GROUP BY SalesOrderID;
